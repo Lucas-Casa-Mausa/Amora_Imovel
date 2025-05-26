@@ -15,11 +15,12 @@ app.add_middleware(
 app.include_router(router, prefix="/api/v1")
 
 app.get("/healthcheck")
-
-
 async def healthcheck():
     return {"status": "ok"}, 200
 
+
+def soma(a:float,b:float):
+    return a+b
 
 if __name__ == "__main__":
     import uvicorn
