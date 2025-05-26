@@ -32,7 +32,7 @@ Backend robusto com **FastAPI** e frontend leve e moderno com **React**.
 ### 🔜 Frontend
 - **React**
 - **Vite**
-- **JavaScript/TypeScript (dependendo da sua stack)**
+- **JavaScript/TypeScript**
 
 ---
 
