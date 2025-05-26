@@ -1,6 +1,7 @@
 from schemas.simulacao import SimulacaoOutput, SimulacaoInput
 from exceptions.exceptions import SimulacaoError
 
+
 def calcular_financiamento(dados: SimulacaoInput) -> SimulacaoOutput:
     try:
         valor_imovel = float(dados.valor_imovel)
@@ -21,8 +22,8 @@ def calcular_financiamento(dados: SimulacaoInput) -> SimulacaoOutput:
         return SimulacaoOutput(
             valor_entrada=round(valor_entrada, 2),
             valor_financiado=round(valor_financiado, 2),
-            total_a_guardar=round(total_a_guardar,2),
-            parcela_mensal=round(parcela_mensal, 2)
+            total_a_guardar=round(total_a_guardar, 2),
+            parcela_mensal=round(parcela_mensal, 2),
         )
 
     except ValueError as e:

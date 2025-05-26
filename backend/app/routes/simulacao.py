@@ -3,7 +3,7 @@ from schemas.simulacao import SimulacaoInput, SimulacaoOutput
 from services.calculos import calcular_financiamento
 from exceptions.exceptions import SimulacaoError
 
-router = APIRouter(tags=['Simulação'])
+router = APIRouter(tags=["Simulação"])
 
 
 @router.post("/simulacao", response_model=SimulacaoOutput)
